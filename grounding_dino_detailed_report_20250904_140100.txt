@@ -1,0 +1,54 @@
+================================================================================
+DETAILED MODEL EVALUATION REPORT
+================================================================================
+
+METADATA:
+  model_name: grounding_dino
+  timestamp: 20250904_140100
+  total_images: 5000
+  total_detections: 21394
+  confidence_threshold: 0.3
+  text_prompt: person . car . bicycle . motorcycle . bus . truck . dog . cat . chair . table
+  device: cuda
+
+SUMMARY METRICS:
+  total_inference_time: 2111.6509549617767
+  average_time_per_image: 0.42233019099235536
+  fps: 2.3678155654709068
+  average_detections_per_image: 4.2788
+  mean_confidence: 0.5090494381581288
+
+CLASS DISTRIBUTION:
+        class_name  count  mean_confidence  std_confidence  min_confidence  max_confidence
+            person  13773         0.523154        0.159918        0.300001        0.940495
+             chair   2517         0.420236        0.100859        0.300037        0.792484
+               car   2504         0.504401        0.152631        0.300087        0.876333
+             truck    641         0.430918        0.120710        0.300001        0.786847
+        motorcycle    444         0.536634        0.188021        0.300136        0.926762
+               bus    410         0.607818        0.211064        0.300114        0.945768
+           bicycle    364         0.478149        0.164077        0.300334        0.894116
+               dog    356         0.593729        0.209731        0.300281        0.932840
+               cat    242         0.661776        0.184688        0.302055        0.928159
+             table     45         0.329535        0.029206        0.300168        0.428882
+       chair table     21         0.399245        0.053500        0.317841        0.483637
+bicycle motorcycle     16         0.414972        0.065544        0.314407        0.598650
+         car truck     16         0.368230        0.043821        0.312825        0.443266
+         bus truck     14         0.406622        0.042779        0.324730        0.484773
+           dog cat     13         0.460415        0.090992        0.321494        0.594624
+       truck table      5         0.527566        0.152433        0.356472        0.763143
+      person chair      4         0.439396        0.038732        0.375234        0.474464
+           car bus      3         0.423551        0.064134        0.341955        0.498646
+        person dog      2         0.376162        0.013157        0.363006        0.389319
+         car chair      2         0.339155        0.030078        0.309077        0.369233
+        person car      1         0.323130        0.000000        0.323130        0.323130
+        person cat      1         0.357297        0.000000        0.357297        0.357297
+
+ERROR ANALYSIS:
+  Total errors: 0
+
+PERFORMANCE RECOMMENDATIONS:
+  - Consider model optimization for faster inference
+  - Low FPS detected, investigate bottlenecks
+  - Consider adjusting confidence threshold
+
+Report generated successfully!

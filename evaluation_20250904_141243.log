@@ -1,0 +1,169 @@
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Evaluation logging initialized. Log file: /kaggle/working/logs3/evaluation_20250904_141243.log
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Initializing ModelEvaluator with file: /kaggle/working/results/grounding_dino_results_20250904_140100.json
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Successfully loaded results from: /kaggle/working/results/grounding_dino_results_20250904_140100.json
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Loaded 5000 results from file
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Running evaluation analyses
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - ============================================================
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - MODEL EVALUATION SUMMARY
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - ============================================================
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Model: grounding_dino
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Timestamp: 20250904_140100
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Device: cuda
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Confidence Threshold: 0.3
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Total Images: 5000
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Total Detections: 21394
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Error Count: 0
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - PERFORMANCE METRICS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Average Time per Image: 0.4223s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   FPS: 2.37
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Average Detections per Image: 4.28
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Mean Confidence: 0.509
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - ============================================================
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Analyzing class distribution...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Found 22 unique classes
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+CLASS DISTRIBUTION ANALYSIS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+        class_name  count  mean_confidence  std_confidence  min_confidence  max_confidence
+            person  13773         0.523154        0.159918        0.300001        0.940495
+             chair   2517         0.420236        0.100859        0.300037        0.792484
+               car   2504         0.504401        0.152631        0.300087        0.876333
+             truck    641         0.430918        0.120710        0.300001        0.786847
+        motorcycle    444         0.536634        0.188021        0.300136        0.926762
+               bus    410         0.607818        0.211064        0.300114        0.945768
+           bicycle    364         0.478149        0.164077        0.300334        0.894116
+               dog    356         0.593729        0.209731        0.300281        0.932840
+               cat    242         0.661776        0.184688        0.302055        0.928159
+             table     45         0.329535        0.029206        0.300168        0.428882
+       chair table     21         0.399245        0.053500        0.317841        0.483637
+bicycle motorcycle     16         0.414972        0.065544        0.314407        0.598650
+         car truck     16         0.368230        0.043821        0.312825        0.443266
+         bus truck     14         0.406622        0.042779        0.324730        0.484773
+           dog cat     13         0.460415        0.090992        0.321494        0.594624
+       truck table      5         0.527566        0.152433        0.356472        0.763143
+      person chair      4         0.439396        0.038732        0.375234        0.474464
+           car bus      3         0.423551        0.064134        0.341955        0.498646
+        person dog      2         0.376162        0.013157        0.363006        0.389319
+         car chair      2         0.339155        0.030078        0.309077        0.369233
+        person car      1         0.323130        0.000000        0.323130        0.323130
+        person cat      1         0.357297        0.000000        0.357297        0.357297
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Analyzing inference times...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Found 5000 valid inference times
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+INFERENCE TIME ANALYSIS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Mean: 0.4223s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Std: 0.0349s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Min: 0.2274s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Max: 0.4913s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Median: 0.4120s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   25th percentile: 0.4053s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   75th percentile: 0.4506s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   95th percentile: 0.4559s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   99th percentile: 0.4862s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Analyzing confidence score distribution...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Found 21394 confidence scores
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+CONFIDENCE SCORE ANALYSIS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Total Scores: 21394
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Mean: 0.509
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Std: 0.161
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Min: 0.300
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Max: 0.946
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Median: 0.475
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Saved sample visualization: /kaggle/working/evaluation3/grounding_dino_sample_0.jpg
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Generating visualizations
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Creating visualizations...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Analyzing class distribution...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Found 22 unique classes
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+CLASS DISTRIBUTION ANALYSIS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+        class_name  count  mean_confidence  std_confidence  min_confidence  max_confidence
+            person  13773         0.523154        0.159918        0.300001        0.940495
+             chair   2517         0.420236        0.100859        0.300037        0.792484
+               car   2504         0.504401        0.152631        0.300087        0.876333
+             truck    641         0.430918        0.120710        0.300001        0.786847
+        motorcycle    444         0.536634        0.188021        0.300136        0.926762
+               bus    410         0.607818        0.211064        0.300114        0.945768
+           bicycle    364         0.478149        0.164077        0.300334        0.894116
+               dog    356         0.593729        0.209731        0.300281        0.932840
+               cat    242         0.661776        0.184688        0.302055        0.928159
+             table     45         0.329535        0.029206        0.300168        0.428882
+       chair table     21         0.399245        0.053500        0.317841        0.483637
+bicycle motorcycle     16         0.414972        0.065544        0.314407        0.598650
+         car truck     16         0.368230        0.043821        0.312825        0.443266
+         bus truck     14         0.406622        0.042779        0.324730        0.484773
+           dog cat     13         0.460415        0.090992        0.321494        0.594624
+       truck table      5         0.527566        0.152433        0.356472        0.763143
+      person chair      4         0.439396        0.038732        0.375234        0.474464
+           car bus      3         0.423551        0.064134        0.341955        0.498646
+        person dog      2         0.376162        0.013157        0.363006        0.389319
+         car chair      2         0.339155        0.030078        0.309077        0.369233
+        person car      1         0.323130        0.000000        0.323130        0.323130
+        person cat      1         0.357297        0.000000        0.357297        0.357297
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Analyzing inference times...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Found 5000 valid inference times
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+INFERENCE TIME ANALYSIS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Mean: 0.4223s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Std: 0.0349s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Min: 0.2274s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Max: 0.4913s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Median: 0.4120s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   25th percentile: 0.4053s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   75th percentile: 0.4506s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   95th percentile: 0.4559s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   99th percentile: 0.4862s
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Analyzing confidence score distribution...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Found 21394 confidence scores
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - 
+CONFIDENCE SCORE ANALYSIS:
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Total Scores: 21394
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Mean: 0.509
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Std: 0.161
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Min: 0.300
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Max: 0.946
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO -   Median: 0.475
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - INFO - Generating plots...
+2025-09-04 14:12:43 - evaluation2_20250904_141243 - DEBUG - Created class distribution plot
+2025-09-04 14:12:44 - evaluation2_20250904_141243 - DEBUG - Created confidence distribution plot
+2025-09-04 14:12:44 - evaluation2_20250904_141243 - DEBUG - Created inference time distribution plot
+2025-09-04 14:12:44 - evaluation2_20250904_141243 - DEBUG - Created detections per image plot
+2025-09-04 14:12:44 - evaluation2_20250904_141243 - DEBUG - Created confidence by class boxplot
+2025-09-04 14:12:44 - evaluation2_20250904_141243 - DEBUG - Created performance summary plot
+2025-09-04 14:12:46 - evaluation2_20250904_141243 - INFO - Visualization saved to: /kaggle/working/evaluation3/grounding_dino_evaluation_20250904_140100.png
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - Generating detailed report
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - Generating detailed evaluation report...
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - Analyzing class distribution...
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - Found 22 unique classes
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - 
+CLASS DISTRIBUTION ANALYSIS:
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - 
+        class_name  count  mean_confidence  std_confidence  min_confidence  max_confidence
+            person  13773         0.523154        0.159918        0.300001        0.940495
+             chair   2517         0.420236        0.100859        0.300037        0.792484
+               car   2504         0.504401        0.152631        0.300087        0.876333
+             truck    641         0.430918        0.120710        0.300001        0.786847
+        motorcycle    444         0.536634        0.188021        0.300136        0.926762
+               bus    410         0.607818        0.211064        0.300114        0.945768
+           bicycle    364         0.478149        0.164077        0.300334        0.894116
+               dog    356         0.593729        0.209731        0.300281        0.932840
+               cat    242         0.661776        0.184688        0.302055        0.928159
+             table     45         0.329535        0.029206        0.300168        0.428882
+       chair table     21         0.399245        0.053500        0.317841        0.483637
+bicycle motorcycle     16         0.414972        0.065544        0.314407        0.598650
+         car truck     16         0.368230        0.043821        0.312825        0.443266
+         bus truck     14         0.406622        0.042779        0.324730        0.484773
+           dog cat     13         0.460415        0.090992        0.321494        0.594624
+       truck table      5         0.527566        0.152433        0.356472        0.763143
+      person chair      4         0.439396        0.038732        0.375234        0.474464
+           car bus      3         0.423551        0.064134        0.341955        0.498646
+        person dog      2         0.376162        0.013157        0.363006        0.389319
+         car chair      2         0.339155        0.030078        0.309077        0.369233
+        person car      1         0.323130        0.000000        0.323130        0.323130
+        person cat      1         0.357297        0.000000        0.357297        0.357297
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - Detailed report saved to: /kaggle/working/evaluation3/grounding_dino_detailed_report_20250904_140100.txt
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - ============================================================
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - EVALUATION COMPLETE!
+2025-09-04 14:12:47 - evaluation2_20250904_141243 - INFO - ============================================================
