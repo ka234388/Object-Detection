@@ -74,17 +74,6 @@ python run_inference.py
 
 ---
 
-## 🧩 Comparative Highlights  
-
-| Metric | 🥇 Best Model | 🥈 Runner-up |
-|:--|:--|:--|
-| **Speed** | DETR | Faster R-CNN |
-| **Confidence** | DETR | Faster R-CNN |
-| **Class Variety** | DETR | Faster R-CNN |
-| **Prompt Flexibility** | Grounding DINO | — |
-
----
-
 ## 🖼️ Qualitative Results  
 
 | Model | Example |
