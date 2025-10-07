@@ -82,9 +82,4 @@ python run_inference.py
 | **DETR** | Sharper boxes, higher confidence, minimal overlap. |
 | **Grounding DINO** | Detects persons and vehicles at crosswalks with moderate confidence. |
 
- 
-```markdown
-![DETR Sample](sample_detection.jpg)
-![FasterRCNN Sample](assets/fasterrcnn_sample.jpg)
-![GroundingDINO Sample](assets/groundingdino_sample.jpg)
 
