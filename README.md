@@ -34,3 +34,70 @@ git clone https://github.com/<your_username>/<your_repo>.git
 cd <your_repo>
 pip install -r requirements.txt
 python run_inference.py
+
+> **Dependencies:**  
+> - Python ≥ 3.9  
+> - PyTorch ≥ 1.13  
+> - torchvision  
+> - tqdm  
+> - matplotlib  
+> - json  
+> - opencv-python  
+
+---
+
+## 📊 Results Summary  
+
+| Model | Avg Time / Image | FPS | Avg Detections / Img | Mean Confidence |
+|:------|:----------------:|:--:|:----------------------:|:----------------:|
+| 🟧 Grounding DINO | 422 ms | 2.37 | 4.3 | 0.51 |
+| 🟦 Faster R-CNN | 62 ms | 16.1 | 9.0 | 0.816 |
+| 🟪 DETR | 45 ms | 22.2 | 11.5 | 0.84 |
+
+---
+
+## 🔍 Model Insights  
+
+### 🔹 Faster R-CNN  
+- Solid anchor-based detections.  
+- ~9 objects per image, mean confidence ≈ 0.82.  
+- Reliable for frequent categories (person, car, book).  
+
+### 🔸 DETR  
+- Transformer architecture; global reasoning without anchors.  
+- Fastest (22 FPS) + highest confidence (0.84).  
+- Detects both large and small objects consistently.  
+
+### 🟩 Grounding DINO  
+- Combines vision + language prompts.  
+- Slower (~2 FPS) with lower confidence (~0.51).  
+- Best for open-vocabulary or text-guided tasks.  
+
+---
+
+## 🧩 Comparative Highlights  
+
+| Metric | 🥇 Best Model | 🥈 Runner-up |
+|:--|:--|:--|
+| **Speed** | DETR | Faster R-CNN |
+| **Confidence** | DETR | Faster R-CNN |
+| **Class Variety** | DETR | Faster R-CNN |
+| **Prompt Flexibility** | Grounding DINO | — |
+
+---
+
+## 🖼️ Qualitative Results  
+
+| Model | Example |
+|:------|:--------|
+| **Faster R-CNN** | Detects monitors, laptops, keyboards, and persons accurately. |
+| **DETR** | Sharper boxes, higher confidence, minimal overlap. |
+| **Grounding DINO** | Detects persons and vehicles at crosswalks with moderate confidence. |
+
+*(Add screenshots under the `assets/` folder and link them here if desired.)*  
+
+```markdown
+![DETR Sample](assets/detr_sample.jpg)
+![FasterRCNN Sample](assets/fasterrcnn_sample.jpg)
+![GroundingDINO Sample](assets/groundingdino_sample.jpg)
+
